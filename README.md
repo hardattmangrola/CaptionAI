@@ -14,7 +14,12 @@ Upload an image, and CaptionAI will generate a caption that you can **copy, down
 - 🌐 CORS-enabled API for smooth frontend-backend communication
 
 ---
+## 🎞️ Snapshots
+![image_alt](https://github.com/hardattmangrola/CaptionAI/blob/95a35f416bebbbe9225b52210e64f5534105ecf5/home_page.png)
+![image_alt](https://github.com/hardattmangrola/CaptionAI/blob/95a35f416bebbbe9225b52210e64f5534105ecf5/load-state.png)
+![image_alt](https://github.com/hardattmangrola/CaptionAI/blob/95a35f416bebbbe9225b52210e64f5534105ecf5/caption.png)
 
+---
 ## 🛠 Tech Stack
 - **Backend**: FastAPI, Uvicorn, PyTorch, Hugging Face Transformers
 - **Frontend**: HTML, CSS, JavaScript
