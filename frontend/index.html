@@ -1,130 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Image Caption Generator</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+    <title>frontend</title>
   </head>
   <body>
-    <div class="loading-screen">
-      <div class="loader"></div>
-      <p>Loading 3D Environment...</p>
-    </div>
-
-    <div id="three-container"></div>
-
-    <nav class="navbar">
-      <div class="logo"><span>Caption</span>AI</div>
-      <ul class="nav-links">
-        <li><a href="#" class="active">Home</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <div class="theme-toggle">
-        <i class="fas fa-moon"></i>
-      </div>
-    </nav>
-
-    <main>
-      <div class="container">
-        <div class="slider-container">
-          <div class="slide active">
-            <div class="content">
-              <h1>Image Caption Generator</h1>
-              <p>
-                Upload any image and get an AI-generated caption instantly. Our
-                advanced algorithm analyzes visual content to provide accurate
-                and creative descriptions.
-              </p>
-              <div class="upload-container">
-                <label for="image-upload" class="upload-btn">
-                  <i class="fas fa-cloud-upload-alt"></i> Select Image
-                </label>
-                <input type="file" id="image-upload" accept="image/*" hidden />
-                <p class="file-name">No file selected</p>
-              </div>
-            </div>
-          </div>
-          <div class="slide">
-            <div class="processing-container">
-              <h2>Processing Image</h2>
-              <div class="progress-container">
-                <div class="progress-bar">
-                  <div class="progress"></div>
-                </div>
-                <p class="progress-text">0%</p>
-              </div>
-              <div class="processing-steps">
-                <div class="step active">
-                  <i class="fas fa-file-image"></i>
-                  <span>Image Loaded</span>
-                </div>
-                <div class="step">
-                  <i class="fas fa-search"></i>
-                  <span>Analyzing</span>
-                </div>
-                <div class="step">
-                  <i class="fas fa-magic"></i>
-                  <span>Generating Caption</span>
-                </div>
-                <div class="step">
-                  <i class="fas fa-check-circle"></i>
-                  <span>Complete</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="slide">
-            <div class="result-container">
-              <h2>Generated Caption</h2>
-              <div class="result-content">
-                <div class="image-preview">
-                  <img
-                    id="preview-image"
-                    src="/api/placeholder/400/320"
-                    alt="Your uploaded image"
-                  />
-                </div>
-                <div class="caption-box">
-                  <p id="generated-caption">
-                    Your caption will appear here after processing.
-                  </p>
-                  <div class="caption-actions">
-                    <button class="action-btn copy-btn">
-                      <i class="fas fa-copy"></i> Copy
-                    </button>
-                    <button class="action-btn download-btn">
-                      <i class="fas fa-download"></i> Download
-                    </button>
-                    <button class="action-btn share-btn">
-                      <i class="fas fa-share-alt"></i> Share
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <button class="try-again-btn">Try Another Image</button>
-            </div>
-          </div>
-        </div>
-        <div class="navigation-dots">
-          <span class="dot active" data-slide="0"></span>
-          <span class="dot" data-slide="1"></span>
-          <span class="dot" data-slide="2"></span>
-        </div>
-      </div>
-    </main>
-
-    <footer>
-      <p>&copy; 2025 CaptionAI. All rights reserved.</p>
-    </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="script.js"></script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
