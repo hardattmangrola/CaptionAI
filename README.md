@@ -4,9 +4,13 @@
 CaptionAI transforms your static images into compelling narratives, witty one-liners, and viral-ready social posts instantly. Powered by next-generation AI, it sees what you see—and finds the perfect words to say it.
 
 <div align="center">
-  <video src="demo.mp4" controls autoplay loop muted width="100%"></video>
+  <a href="https://youtu.be/nZWqQITw-D8" target="_blank">
+    <img src="https://img.youtube.com/vi/nZWqQITw-D8/maxresdefault.jpg" 
+         alt="CaptionAI Demo Video" 
+         width="100%" />
+  </a>
   <br/>
-  <em>See CaptionAI in action</em>
+  <em>▶️ See CaptionAI in action</em>
 </div>
 
 ---
