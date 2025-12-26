@@ -41,7 +41,10 @@ const ProcessingSlide = ({ file, options, onComplete, onError }) => {
             formData.append("temperature", options.temperature);
 
             try {
-                const apiPromise = fetch("http://localhost:8000/generate_caption/", {
+                // Use environment variable for API URL or default to localhost
+                const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
+
+                const apiPromise = fetch(`${API_URL}/generate_caption/`, {
                     method: "POST",
                     body: formData,
                 }).then(res => {
